@@ -1,0 +1,5 @@
+- make sure Ollama is downloaded first from its official website
+- in cmd, make sure running 'ollama list' returns the model you are using for your llm 
+- if the model is not listed, run a command like this in cmd - 'ollama pull deepseek-r1'
+- run the server.py first to get the server running
+- the mcp integrate dagent can be seen by running ollama-client.py
