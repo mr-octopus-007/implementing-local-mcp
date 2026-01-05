@@ -40,6 +40,7 @@ def read_data(query: str = "SELECT * FROM people") -> list:
     conn, cursor = init_db()
     try:
         results = cursor.execute(query).fetchall()
+        return results
     except sqlite3.Error as e:
         print(f"Error reading data: {e}")
         return []
